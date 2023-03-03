@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" printOrder="Horizontal" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="821" leftMargin="14" rightMargin="7" topMargin="19" bottomMargin="7" uuid="1ca98023-015e-4a8d-abed-30870117b340">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="parameter3" class="java.lang.String"/>
+	<parameter name="subReporte" class="java.lang.Object"/>
+	<parameter name="parameter1" class="java.lang.String"/>
+	<parameter name="parameter2" class="java.lang.String"/>
+	<parameter name="parameter4" class="java.lang.String"/>
+	<parameter name="parameter5" class="java.lang.String"/>
+	<parameter name="parameter6" class="java.lang.String"/>
+	<parameter name="parameter7" class="java.lang.String"/>
+	<parameter name="parameter8" class="java.lang.String"/>
+	<parameter name="parameter9" class="java.lang.String"/>
+	<parameter name="parameter10" class="java.lang.String"/>
+	<parameter name="parameter11" class="java.lang.String"/>
+	<parameter name="parameter12" class="java.lang.String"/>
+	<parameter name="parameter13" class="java.lang.String"/>
+	<parameter name="parameter14" class="java.lang.String"/>
+	<parameter name="parameter15" class="java.lang.String"/>
+	<parameter name="parameter16" class="java.lang.String"/>
+	<parameter name="parameter17" class="java.lang.String"/>
+	<parameter name="parameter18" class="java.lang.String"/>
+	<parameter name="reclamos" class="java.lang.String"/>
+	<parameter name="reclamantes" class="java.lang.String"/>
+	<parameter name="vehiculos" class="java.lang.String"/>
+	<parameter name="total" class="java.lang.String"/>
+	<parameter name="totalD" class="java.lang.String"/>
+	<parameter name="totalDS" class="java.lang.String"/>
+	<parameter name="titulo" class="java.lang.String"/>
+	<parameter name="tipo" class="java.lang.String"/>
+	<parameter name="fecha" class="java.lang.String"/>
+	<field name="subreporteDS" class="net.sf.jasperreports.engine.JRDataSource"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="21">
+			<textField>
+				<reportElement x="0" y="0" width="821" height="13" uuid="17ae69c5-c7bd-41a0-a29f-1f771b8f23f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{titulo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="13" width="815" height="8" uuid="6c9bf24e-4293-41de-92c5-e77fa8d5f761"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="6" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="528">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="97" width="133" height="20" backcolor="#FFFFCC" uuid="7129c4fe-7484-4ba0-ba6f-0c2cddab269a">
+					<property name="isRemoveLineWhenBlank" value="true"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter3}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="57" width="133" height="20" backcolor="#FFFFCC" uuid="c6162fe8-9c1e-4083-8053-24fe26a8d5a7"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter1}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="77" width="133" height="20" backcolor="#FFFFCC" uuid="1ab69aa8-df89-4352-9288-598fd5c52bbd"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter2}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="117" width="133" height="20" backcolor="#FFFFCC" uuid="4efc72fb-5cbf-4bcd-906b-95ce5dd3926f">
+					<property name="isRemoveLineWhenBlank" value="true"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter4}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="137" width="133" height="20" backcolor="#FFFFCC" uuid="b40ce21c-ed15-4000-9e6b-559fc02b5b5f">
+					<property name="isRemoveLineWhenBlank" value="true"/>
+				</reportElement>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter5}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="177" width="133" height="20" backcolor="#FFFFCC" uuid="0376ab87-088f-42d0-80b9-7d22944c901a"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter6}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="197" width="133" height="20" backcolor="#FFFFCC" uuid="f354ac52-0b83-469d-82c1-163dc44b344b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter7}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="217" width="133" height="20" backcolor="#FFFFCC" uuid="6725060c-2251-4ae7-8050-6c9be020634b"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter8}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="237" width="133" height="20" backcolor="#FFFFCC" uuid="b223ff9f-800d-4870-875c-48adfc2781aa"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter9}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="257" width="133" height="20" backcolor="#FFFFCC" uuid="3bfa0f19-a17e-40b2-9f0b-7cb2f75b1452"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter10}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="277" width="133" height="20" backcolor="#FFFFCC" uuid="605ae4e3-00b4-4cde-ab99-8b8e891a7c52"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter11}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="297" width="133" height="20" backcolor="#FFFFCC" uuid="52f705cc-ba5b-495a-8069-6f7701dda1c8"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter12}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="317" width="133" height="20" backcolor="#FFFFCC" uuid="77a6223e-8c2f-4e52-a42f-9de78a247a70"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter13}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="337" width="133" height="20" backcolor="#FFFFCC" uuid="577d53c2-bd83-4ad8-8d61-59e8297c8d92"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter14}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="377" width="133" height="20" backcolor="#FFFFCC" uuid="8843cb38-41c9-44a2-888a-95a942d190cf"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter15}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="397" width="133" height="20" backcolor="#FFFFCC" uuid="b0838772-60b4-4368-88c5-9ff8802a8bcf"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter16}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="417" width="133" height="20" backcolor="#FFFFCC" uuid="a4890963-21a1-4dd4-a38b-eae0aebbe278"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter17}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="437" width="133" height="20" backcolor="#FFFFCC" uuid="2001a3ca-99b3-4637-b2ca-1892c2b0c948"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{parameter18}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" mode="Opaque" x="0" y="37" width="133" height="20" backcolor="#99CCFF" uuid="0008178e-03fa-42e2-ad4d-257d363874fa"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reclamos}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="157" width="133" height="20" backcolor="#99CCFF" uuid="acd651ad-c964-45ed-adcc-369cf1d9a1d2"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{reclamantes}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement mode="Opaque" x="0" y="357" width="133" height="20" backcolor="#99CCFF" uuid="bffc1239-ca9c-4608-99f9-985b23bf3754"/>
+				<textElement>
+					<font size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{vehiculos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="457" width="133" height="18" backcolor="#99CCFF" uuid="4763ab99-e9b3-43f4-8fa8-70c6a2187f8c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="475" width="133" height="18" forecolor="#FFFFFF" backcolor="#330099" uuid="1ded421a-772c-48ed-80bf-d739738ea51c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalD}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="493" width="133" height="18" forecolor="#FFFFFF" backcolor="#330099" uuid="cd84eac3-8684-4055-86f6-29ffc333966a"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalDS}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement mode="Opaque" x="0" y="3" width="133" height="34" forecolor="#FFFFFF" backcolor="#330099" uuid="2d19cff3-a56a-46ca-b85d-91c67645d12d"/>
+				<box>
+					<topPen lineWidth="1.5" lineColor="#000000"/>
+					<leftPen lineWidth="1.5" lineColor="#000000"/>
+					<rightPen lineWidth="1.5" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipo}]]></textFieldExpression>
+			</textField>
+			<subreport>
+				<reportElement x="133" y="0" width="682" height="512" uuid="8923425e-1b78-47be-ae1f-e8570c727dc9"/>
+				<subreportParameter name="parameter1"/>
+				<subreportParameter name="parameter2"/>
+				<dataSourceExpression><![CDATA[$F{subreporteDS}]]></dataSourceExpression>
+				<subreportExpression><![CDATA[$P{subReporte}]]></subreportExpression>
+			</subreport>
+		</band>
+	</detail>
+</jasperReport>
