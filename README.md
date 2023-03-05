@@ -10,7 +10,7 @@
 
 El informe de calidad de datos analiza principalmente la información en las tablas de CRR_RECLAMOS y CRR_RECLAMANTES. Como se puede apreciar en el ejemplo a continuación, el informe muestra la cantidad de datos recibidos y el porcentaje que representa sobre la cantidad total de registros.
 
-Este programa opcionalmente puede quedar ejecutando en segundo plano, para que generen y se envíen automáticamente los informes según las fechas y los periodos establecidos a las direcciones de correo electrónico indicadas en la ventana “Input”.
+Este programa opcionalmente lo puedes dejar que se ejecute en segundo plano, para generar y enviar automáticamente a las direcciones de correos establecidos según las fechas y los periodos indicados en la ventana “Input”.
 
 ## Parámetro de informe 
 El informe está basado en el rango de fechas a analizar mediante la colocación de campo de ‘fecha de inicio’ y campo de ‘fecha final’ según el campo CRR_RECLAMOS.fecharegistro (TABLA.campo). Por defecto ‘fecha inicial’ toma el valor del primer día del mes anterior, y puede ser modificado. Por defecto ‘fecha final’ toma el valor del último día del mes anterior, y puede ser modificado.
